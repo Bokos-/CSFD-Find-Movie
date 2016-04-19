@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="chrome.css" /> -->
+    <script type="text/javascript" src="jquery.1.11.2.min.js"></script>
+    <script type="text/javascript" src="cross-browser.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="line">
+		<input type="text" id="commandMovie" placeholder="Názov filmu (min. 3 znaky)"/> 
+	</div>
+	<div class="error">
+		Príliš mnoho požiadavok na server. Počkajte 5 sekúnd.
+	</div>
+	<div class="movies">
+		&nbsp;
+	</div>
+		<table id="movie" cellspacing="0" cellpadding="0">
+			<tr>
+				<td rowspan='9' id="moviePoster">
+					<img src="#" width="136" data-url="" class="openUrl" style="float: left;"/>
+				</td>
+			</tr>
+			<tr>
+				<td id="movieName">
+					<span id="movieRating">&nbsp;</span>
+					<span id="movieNameCs" data-url="" class="openUrl"></span> <span data-url="" class="openUrl" id="movieNameEn"></span>
+				</td>
+			</tr>
+			<tr id="movieError" class="row">
+				<td>Chybné zobrazenie filmu! <span class="openUrl" data-url="" title="Zobraziť">Zobraziť film</a>.</td>
+			</tr>
+			<tr>
+				<td id="movieRate" class="row">
+					Hodnotenie: 	
+					<span></span>%
+				</td>
+			</tr>
+			<tr>
+				<td id="movieGenres" class="row">Žánre: 				<span></span></td>
+			</tr>
+			<tr>
+				<td id="movieYear" class="row">Info: 					<span></span> <span></span></td>
+			</tr>
+			<tr>
+				<td id="movieRuntime" class="row">Dĺžka filmu: 			<span></span></td>
+			</tr>
+			<tr>
+				<td id="movieDirectors" class="specialRow">Režiséry: 	<span></span></td>
+			</tr>
+			<tr>
+				<td id="movieActors" class="specialRow">Herci: 			<div style="display: inline; padding: 0; margin: 0;"></div></td>
+			</tr>
+			</table>
+			<div id="moviePlot">
+			</div>
+</body>
+</html>
